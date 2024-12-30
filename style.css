@@ -1,0 +1,158 @@
+/* Ensure the particles effect covers the entire viewport */
+#particles-js {
+    position: fixed; /* Stays fixed in the viewport */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    top: 0; /* Aligns to the top of the viewport */
+    left: 0; /* Aligns to the left of the viewport */
+    z-index: -1; /* Places it behind other content */
+    background: no-repeat center center fixed;
+    background-color: #000000; /* Fallback color */
+  }
+  
+  /* Example of content overlay */
+  .content {
+    position: relative; /* Ensures it appears over #particles-js */
+    z-index: -1; /* Higher z-index than #particles-js */
+    padding: 20px;
+  }
+body, h1, h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%;}
+.bgimg {
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.btn {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  margin-left: 10px;
+
+}
+.contact_btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+.btn:hover {
+  color: #7CFC00;
+}
+.contact-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 980px;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  font-size: 2.0rem;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-details:hover {
+  color: #7CFC00;
+  transform: translateY(-8px);
+}
+
+.vid {
+  text-align: center;
+  border-radius: 50%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* AUTO-TYPE */
+span {
+  color: #fcfcfc;
+  font-size: 18px;
+  font-family: monospace;
+}
+
+.typeText{
+  margin-Top: 20%;
+  text-align: center;
+  font-family: monospace;
+  color: rgb(251, 252, 251);
+}
+
+.blinker {
+  opacity: 1;
+  margin-bottom: -2px;
+  height: 15px;
+  margin-left: -5px;
+  border-left: 7px solid #fcfcfc;
+  animation: blinker 0.9s steps(2, start) infinite;
+}
+
+@keyframes blinker {
+  to {
+    visibility: hidden;
+  }
+}
+
+/* Full-width input fields */
+input[type=text], input[type=email]{
+  width: 100%;
+  background: #F0F8FF;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+textarea[type=text] {
+  background: #F0F8FF;
+  width: 100%;
+  resize: none;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.submtbtn {
+  background-color: black;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+  text-shadow: 0 0 4px #7CFC00;
+  opacity: 0.9;
+}
+
+.submtbtn:hover {
+  color: #7CFC00;
+  opacity: 0.8;
+}
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  background-color: #ff726f;
+  text-transform: uppercase;
+}
+
+.cancelbtn:hover {
+  opacity: 0.8;
+}
+
+.container {
+  padding: 16px;
+  text-align: left;
+}

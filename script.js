@@ -1,6 +1,6 @@
 var data = [
   {
-    writeThis: "<span> Hi, I'm Jean-Pierre. </span>"
+    writeThis: "<span> Hi, I'm Jean-Pierre:~#</span>"
   }
 ];
 
